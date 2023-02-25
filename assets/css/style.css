@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bus_container {
+    background-color: #fff;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*----------------Common-------------------*/
+.line {
+    border-bottom: 1px solid #fff;
+}
+
+
+
+/*----------------Nav-------------------*/
+.navigation {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation .logo {
+    display: block;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+
+
+
+/*----------------Slider-------------------*/
+.bus_slider {
+    background-color: grey;
+    width: 100%;
+    height: 500px;
+}
+
+.title_slider {
+    width: 100%;
+    height: 100%;
+}
+
+
+.title_slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------Service-------------------*/
+.bus_service {
+    margin: 30px 0;
+}
+
+.group_service {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.box_service {
+    padding: 0 10px;
+}
+
+.box_service img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.box_service h3 {
+    text-align: center;
+    color: #393185;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.box_service p {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+/*----------------Footer-------------------*/
+footer {
+    width: 100%;
+    padding: 60px 0 0;
+    background-color: #393185;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image_footer {
+    margin-bottom: 100px;
+}
+
+.image_footer .background {
+    background-image: url('../images/coash_bus_4.jpg');
+    background-color: red;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.content_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+
+.box_footer {
+    max-width: 300px;
+}
+
+.box_footer h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.box_footer p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.box_footer a {
+    font-size: 15px;
+    color: #fff;
+    display: block;
+}
+
+.box_footer a:hover {
+    text-decoration: underline;
+}
+
+.copy_footer {
+    padding: 10px 0;
+}
+
+.copy_footer p {
+    text-align: center;
+    margin: auto 0;
+    color: #fff;
+    font-size: 14px;
+}
