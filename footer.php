@@ -3,6 +3,8 @@
             <div class="background"></div>
         </div>
 
+        <div class="white_box"></div>
+
         <div class="inner line">
             <div class="content_footer">
                 <div class="box_footer">
@@ -23,9 +25,12 @@
 
                 <div class="box_footer">
                     <h4>Follow Us</h4>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Cancellation Policy</a>
+                    <div class="social">
+                        <a href="#" title="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" title="google"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
