@@ -24,6 +24,51 @@
     }
 
 
+    function getData($query) {
+        try 
+        {
+            $con = connect();
+            $stmt = $con->prepare($query);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
+
+        }catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+    }
+
+
+    function setRoute($from, $to) {
+
+        return $from .'-' . $to;
+        
+    }
+
+
+
+    function getRoute($route) {
+
+        $str = explode('-', $route);
+        $from_to = "";
+
+        foreach($str as $lid) {
+
+            $qry = "SELECT * FROM bus_location WHERE id=$lid";
+            $loc = getData($qry);
+
+            foreach($loc as $tsp) {
+
+                $from_to .= $tsp->township . " - ";
+
+            }
+            
+            
+        }
+        return preg_replace("/-[^-]*$/", '', $from_to);
+    }
+
+
 
 
 

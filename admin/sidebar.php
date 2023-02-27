@@ -27,7 +27,7 @@
         </div>
 
         <div class="list_item">
-            <a href="booking.php"><i class="fa-solid fa-calendar-days"></i>Online Booking</a>    
+            <a href="booking.php"><i class="fa-solid fa-calendar-days"></i>Booking</a>    
         </div>
 
         <div class="list_item">
