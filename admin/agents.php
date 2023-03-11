@@ -1,9 +1,13 @@
 <?php include_once("base.php") ?>
             
 <div class="page_content">
-    <h1>Hello Welcome to Bus Agents</h1>
-</div>
+    <div class="inner-sm">
+        <div class="page_title">
+            <h1>Bus Agent</h1>
+        </div>
 
+    </div>
+</div>
 
 
 <?php include_once("footer.php") ?>

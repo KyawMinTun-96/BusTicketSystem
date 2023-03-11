@@ -1,6 +1,12 @@
-var btn_menu = document.querySelector(".menu");
 var sidebar = document.querySelector(".page_group .navigation");
 var page_body = document.querySelector(".page_group .page_body");
+
+
+
+
+
+
+
 
 function drawer() {
 
@@ -20,3 +26,7 @@ function drawer() {
     }
 
 }
+
+
+
+

@@ -60,7 +60,19 @@ button:focus {
     padding: 5px 30px;
 }
 
+.set_bg{
+    background-color: #393185;
+}
 
+.accordion-button:not(.collapsed) {
+    color: #393185;
+    font-weight: bold;
+    transform: ease .3s;
+    -webkit-transform: ease .3s;
+    -moz-transform: ease .3s;
+    -ms-transform: ease .3s;
+    -o-transform: ease .3s;
+}
 
 
 
@@ -221,14 +233,16 @@ button:focus {
     text-align: center;
 }
 
-.bus_list table thead th {
+.bus_list table thead th,
+.route_list table thead th {
     font-size: 18px;
     font-family: sans-serif;
     color: #393185;
     font-weight: normal;
 }
 
-.bus_list table tbody td {
+.bus_list table tbody td,
+.route_list table tbody td {
     font-family: sans-serif;
     font-size: 15px;
     color: #333;
@@ -240,6 +254,39 @@ button:focus {
     background-color: #eff2ff
 }
 
+.bus_list table tbody tr td button i {
+    color: #393185;
+}
+
+.bus_list table tbody tr td button:nth-child(2) > i {
+    color: grey;
+}
+
+.bus_list table tbody tr td button:last-child > i {
+    color: red;
+}
+
+
+
+/*--------------Bus Routes----------------*/
+.route_icon{
+    color: #393185;
+    margin-right: 10px;
+}
+
+.route_list table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.route_list table tbody td {
+    font-size: 14px;
+    padding: 0.4rem 0;
+}
+
+
+
 
 
 
@@ -249,9 +296,297 @@ button:focus {
     margin-bottom: 30px;
 }
 
+.show_bcrumb ol li a:hover {
+    color: #393185;
+}
+
 .show_body {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card_box {
+    max-width: 310px;
+}
+
+.card_image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: bottom;
+}
+
+.box_body {
+    padding: .5rem 1rem !important;
+}
+
+.box_body h5 {
+    color: #393185;
+    font-family: sans-serif;
+    font-size: 19px;
+    padding: 0;
+}
+
+.box_body p {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.box_body p i {
+    width: 15px;
+    font-size: 13px;
+    color: #393185;
+}
+
+.error_box {
+    text-align: center;
+    margin: 15% auto;
+}
+
+.error_box p {
+    color: #33333375;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+
+.modal-header h5 {
+    color: #393185;
+}
+
+.seat_design {
+    border-right: 1px solid #393185;
+}
+
+
+.seat_design table,
+.seat_design tr,
+.seat_design td,
+.seat_design th {
+    border: 10px solid #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.seat_design td {
+    text-align: center;
+    background-color: rgb(119, 119, 119);
+}
+
+.seat_design td button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px 5px;
+    color: #fff;
+}
+
+.seat_design .lane {
+    background-color: #fff;
+    padding: 0;
+}
+
+
+.seat_label {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: yellow;
+    margin-bottom: 30px;
+}
+
+.seat_label .seat_color1,
+.seat_label .seat_color2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.seat_label .seat_color1 {
+    background-color: #393185;
+}
+
+.seat_label .seat_color2 {
+    background-color: rgb(119, 119, 119);
+}
+
+.seat_label > span {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #393185;
+    line-height: 30px;
+}
+
+.seat_amount p {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.buy_ticket {
+    border-top: 1px solid #393185;
+}
+
+.buy_ticket button {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+/*--------------Booking/ Home----------------*/
+.card_group {
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+	gap: 20px;
+	margin-bottom: 50px;
+}
+
+
+/* .h_card_body {
+
+} */
+
+.c_card_logo,
+.b_card_logo,
+.st_card_logo,
+.bs_card_logo,
+.r_card_logo,
+.d_card_logo,
+.a_card_logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.c_card_logo i,
+.b_card_logo i,
+.st_card_logo i,
+.bs_card_logo i,
+.r_card_logo i,
+.d_card_logo i,
+.a_card_logo i {
+    font-size: 50px;
+}
+
+.c_card_logo i {
+    color: #393185;
+}
+
+.b_card_logo i {
+    color: red;
+}
+
+.st_card_logo i {
+    color: rgb(0 135 255 / 94%);
+}
+
+.bs_card_logo i {
+    color: rgb(42, 202, 79);
+}
+
+.r_card_logo i {
+    color:rgb(14, 202, 240);
+}
+
+.d_card_logo i {
+    color: rgb(134, 118, 31);
+}
+
+.a_card_logo i {
+    color: rgb(110 31 134);
+}
+
+.c_card_text,
+.b_card_text,
+.st_card_text,
+.bs_card_text,
+.r_card_text,
+.d_card_text,
+.a_card_text {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.c_card_text {
+    color: #393185;
+}
+
+.b_card_text {
+    color: red;
+}
+
+.st_card_text {
+    color: rgb(0 135 255 / 94%);
+}
+
+.bs_card_text {
+    color: rgb(42, 202, 79);
+}
+
+.r_card_text {
+    color: rgb(14, 202, 240);;
+}
+
+.d_card_text {
+    color: rgb(134, 118, 31);
+}
+
+.a_card_text {
+    color: rgb(110 31 134);
+}
+
+.c_card_footer {
+    background-color: #393185 !important;
+    color: #fff;
+}
+
+.b_card_footer {
+    background-color: red !important;
+    color: #fff;
+}
+
+.d_card_footer {
+    background-color: red !important;
+    color: #fff;
+}
+
+.st_card_footer {
+    background-color: rgb(0 135 255 / 94%) !important;
+    color: #fff;
+}
+
+.bs_card_footer {
+    background-color: rgb(42, 202, 79) !important;
+    color: #fff;
+}
+
+.r_card_footer {
+    background-color: rgb(14, 202, 240) !important;
+    color: #fff;
+}
+
+.d_card_footer {
+    background-color: rgb(134, 118, 31) !important;
+    color: #fff;
+}
+
+.a_card_footer {
+    background-color: rgb(110 31 134) !important;
+    color: #fff;
 }
